@@ -1,0 +1,406 @@
+/* 
+01 TYPOGRAPHY SYSTEM
+      - FONT WEIGHTS:
+      Default: 400
+      Medium: 500
+      Semi-Bold: 600
+      Bold: 700
+
+      - LINE HEIGHTS: 
+      Default: 1
+      Small: 
+      Medium: 
+      Paragraph Default: 1.6
+
+      - LETTER SPACING
+      
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+02 COLORS
+      Primary: rgb(245, 245, 245);
+      Tints: 
+        
+      Shades: rgb(75, 75, 75);
+      rgb(10, 10, 10);
+      Accents:
+      #acacac;
+      Greys: 
+      #9f9f9f;
+      -
+      -
+03 IMAGES
+      Unsplash.com
+      UIFaces.com
+04 ICONS
+05 SHADOWS
+06 BORDER RADIUS
+      Default
+07 WHITESPACE
+*/
+
+/* TESTING LINE */
+/* CSS RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1;
+  font-weight: 400;
+  background-color: black;
+}
+body * {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover,
+.email-address:link:hover {
+  color: #acacac;
+  cursor: pointer;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+/********************/
+/* GENERAL REUSABLE COMPONENTS */
+/********************/
+.heading-primary {
+  font-size: 12.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: 2px;
+  margin-bottom: 4.8rem;
+}
+.bg-white {
+  background: rgb(245, 245, 245);
+  color: rgb(10, 10, 10);
+}
+/********************/
+/* HERO SECTION */
+/********************/
+.header-hero-container {
+  /* Need to Fix the Moving of the Image */
+  background-color: slategray;
+  background-image: url("/img/mma-gym.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/********************/
+/* HEADER */
+/********************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgb(10, 10, 10); */
+  color: rgb(245, 245, 245);
+  padding: 2.4rem 3.2rem;
+}
+/********************/
+/* NAVIGATION */
+/********************/
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  text-transform: uppercase;
+  color: rgb(245, 245, 245);
+  font-size: 1.6rem;
+  letter-spacing: 0.03rem;
+}
+.logo {
+  height: 4.4rem;
+}
+/* BUTTON */
+.btn--donate {
+  display: inline-block;
+  text-transform: uppercase;
+  color: rgb(10, 10, 10);
+  background-color: rgb(245, 245, 245);
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: none;
+  padding: 1rem 1.4rem;
+  border-radius: 6px;
+  letter-spacing: 1.05px;
+  transition: all 0.5s;
+}
+.btn--donate:hover {
+  color: rgb(245, 245, 245);
+  background-color: transparent;
+  box-shadow: inset 0 0 0 3px rgb(245, 245, 245);
+}
+/**********************/
+/* HERO */
+/**********************/
+.section-hero {
+  padding: 4.8rem 0 9.6rem 0;
+}
+.hero {
+  max-width: 170rem;
+  color: rgb(245, 245, 245);
+  /* background-color: rgb(10, 10, 10); */
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+}
+
+.hero-description {
+  font-size: 4.1rem;
+  line-height: 1.5;
+  padding: 0 2.4rem;
+}
+.watch-video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  gap: 2rem;
+}
+ion-icon {
+  font-size: 5rem;
+  color: rgb(245, 245, 245);
+}
+.play-circle:hover {
+  color: #acacac;
+}
+.watch-video {
+  font-size: 3rem;
+  letter-spacing: 0.23rem;
+  line-height: 1.6;
+}
+/**********************/
+/* WHY SECTION */
+/**********************/
+.section-why {
+  padding: 10rem 0;
+}
+.section-why-container {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.heading-secondary {
+  text-transform: uppercase;
+  font-size: 5.2rem;
+  margin-bottom: 4rem;
+}
+.heading-secondary,
+.p-text {
+  text-align: center;
+}
+.p-text {
+  font-size: 3rem;
+  margin-bottom: 6rem;
+  line-height: 1.1;
+}
+/**********************/
+/* FEATURES */
+/**********************/
+.section-features {
+  background-color: rgb(10, 10, 10);
+  color: rgb(245, 245, 245);
+  padding: 6% 10%;
+}
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.features-left,
+.features-right {
+  width: 45%;
+  text-align: center;
+  gap: 3rem;
+}
+.responsive-img-div {
+  width: 75%;
+  margin: 0 auto 4rem auto;
+}
+.features-img {
+  width: 100%;
+  height: auto;
+}
+.features-text {
+  text-align: center;
+  padding: 0 2.4rem;
+  margin-bottom: 3.2rem;
+}
+.heading-tertiary {
+  font-weight: bold;
+  letter-spacing: 0.25rem;
+  font-size: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+.features-p {
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+.features-btn {
+  display: inline-block;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  padding: 2rem;
+  border: 1px solid rgb(75, 75, 75);
+  background-color: transparent;
+  color: rgb(245, 245, 245);
+  width: 45%;
+}
+.heading-tertiary,
+.features-btn {
+  text-transform: uppercase;
+}
+
+.features-btn:hover,
+.features-btn:active {
+  color: rgb(10, 10, 10);
+  background-color: rgb(245, 245, 245);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+/*****************/
+/* CALL TO ACTION */
+/*****************/
+.cta {
+  text-align: center;
+  padding: 10rem 0;
+}
+.cta-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.volunteer-btn {
+  display: inline-block;
+  color: rgb(10, 10, 10);
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0.12rem;
+  padding: 2rem 0;
+  width: 33%;
+  border: 1px solid rgb(75, 75, 75);
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.volunteer-btn:link,
+.volunteer-btn:visited {
+  transition: all 0.3s;
+}
+.volunteer-btn:hover,
+.volunteer-btn:active,
+.button-donate:hover,
+.button-donate:active {
+  color: rgb(245, 245, 245);
+  background-color: rgb(10, 10, 10);
+  transition-duration: 0.5s;
+}
+/*****************/
+/* FOOTER */
+/*****************/
+.footer {
+  background-color: rgb(10, 10, 10);
+  color: rgb(245, 245, 245);
+  padding: 2vw 3vw;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.4rem;
+  gap: 3rem;
+}
+.icon {
+  height: 3rem;
+}
+.icon-fill {
+  color: rgb(245, 245, 245);
+}
+.footer-site-map-container,
+.footer-contribute-container {
+  font-size: 1.6rem;
+  margin-bottom: 1.8rem;
+}
+.footer-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 2.4rem;
+}
+.footer-site-map,
+.footer-contribute {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  color: #9f9f9f;
+  margin-bottom: 0.5rem;
+}
+
+.footer-top-left,
+.footer-top-right {
+  letter-spacing: 0.08vw;
+  height: 100%;
+}
+.footer-top-right {
+  font-size: 1.6rem;
+  margin-right: 2rem;
+}
+.footer-name {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+.address-container {
+  font-style: normal;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+}
+.email-address:link {
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+.footer-bottom {
+  border-top: 1px solid rgb(245, 245, 245);
+  padding-top: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.18rem;
+  font-size: 1.6rem;
+}
+.footer-logo {
+  height: 4.5rem;
+}

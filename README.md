@@ -16,4 +16,4 @@ I originally made the entire site using vh and vw units. It looked amazing, and 
 
 ## Lessons Learned:
 
-During this project I learned how to properly use rems, and not using vh/vw for everything.
+During this project I learned how to properly use rems, and not using vh/vw for everything. While I was doing the project, it might have seemed easier to just use Viewport Height, and Viewport Width to make my website incredibly responsive, but it ended up biting me when I tried to zoom in and out on the page, and realized nothing was moving. On top of that I was using GitHub to track my changes, and when I was going through changing my vw/vh to rems I made a new branch and ended up having to learn a lesson the hard way about how to properly use branches, and roll back commits. 

@@ -7,9 +7,11 @@ At Level Ground (LG), urban youth cultivate grit and resilience through Mixed Ma
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS
+**Tech used:** HTML, CSS, JavaScript
 
 Building this landing page, I started with all of the HTML, making it geared towards accessibility, and screen readers. I tried using as many sections and class names to add to readability and ease of use. The CSS is where I got to have fun with things. I code to spend my time designing the site to be easily readable, but also have an impact that only an MMA Gym could provide. 
+
+I then used JavaScript to implement "Smooth Scrolling" so when a link is clicked, it scrolls to the area it needs to, but smoothly instead of jumping to the spot abruptly.
 
 ## Optimizations
 I originally made the entire site using vh and vw units. It looked amazing, and it sure was responsive when it came to going from wide screen monitors to mobile screens. However, it was not optimized for users that have visual impairments, and you could not zoom in and out on the page. So I changed all of my units to rem units, and used media queries, so now users that have any visual impairments would be able to enjoy the site. 
